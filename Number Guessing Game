@@ -1,0 +1,19 @@
+#**********Number Guessing Game**********
+import random
+winning_number=random.randint(0,100)
+Guess=1
+game_over= False
+Guessing_Number=int(input("Enter Your Guessing Number (1-100): "))
+while not game_over:
+    if Guessing_Number==winning_number:
+        print (f"You Win!! after {Guess} times")
+        game_over=True
+    else:
+        if Guessing_Number>winning_number:
+            print("Too High")
+            Guessing_Number=int(input("Guess Again: "))
+            Guess+=1
+        elif Guessing_Number<winning_number:
+            print ("Too Low")
+            Guessing_Number= int(input("Guess Again: "))
+            Guess+=1
