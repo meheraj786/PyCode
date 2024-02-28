@@ -1,0 +1,9 @@
+# **********Palindrome Name Checker**********
+def is_palindrome (a):
+    if a[0:0]==a[0:0:-1]:
+        return ("it's a palindrome")
+    
+    return ("No it's not palindrome")
+
+name= input("Enter Your Name: ")
+print (is_palindrome(name.lower()))
