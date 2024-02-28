@@ -1,0 +1,7 @@
+# **********Vowels Counter**********
+text= input("Enter Any sentence: ")
+vowels= ['a', 'e', 'i', 'o', 'u']
+i=0
+while i<len(vowels):
+    print (f"{vowels[i]} = {text.lower().count(vowels[i])}")
+    i+=1
